@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, rgb(255, 255, 255), #ffa017) ;
+}
+
+body{
+    background-image: url('background.jpg');
+    background-size: cover; /* Membuat gambar menyesuaikan ukuran elemen */
+            background-position: center; /* Memusatkan gambar */
+            background-repeat: no-repeat; /* Tidak mengulang gambar */
+}
+
+
+#checkmenu{
+    display: none;
+}
+ label{
+    display: none;
+ }
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.grup_logo{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: #ffa017;
+    font-family: "Dynalight", cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: normal;
+    
+
+}
+
+.menu a{
+    padding: 10px 16px;
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+
+.menu a:hover{
+    background-color: rgba(0, 0, 0, 0.166);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 2rem 2rem;
+    gap: 1.5rem;
+}
+
+.judul{
+    text-align: center;
+    color: #ffa017;
+}
+
+.isi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: auto;
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 1rem 1.5rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width:640px) 
+{
+    .menu{
+        flex-direction: column;
+    }
+
+    .navbar{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo{
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    label{
+        display: flex;
+        font-size: 40px;
+        position: relative;
+        justify-self: right;
+    }
+
+        
+}
+
